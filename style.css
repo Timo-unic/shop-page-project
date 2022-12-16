@@ -126,8 +126,10 @@ body {
     display: none;
     height: 50px;
     text-align: left;
+    padding-left: 20px;
     line-height: 50px;
     font-size: 21px;
+    border: none;
     color: #fff;
     text-decoration: none;
 }
