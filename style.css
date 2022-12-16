@@ -1,32 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Roboto:wght@300;700&display=swap');
-
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("/lesson9/image/patt.png");
+    background-image: url("images/patt.png");
 }
 
 .container {
     width: 1200px;
     padding-left: 15px;
-    padding-right: 15px; 
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .header {
     height: 100px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.75);
     align-items: center;
-}
-
-.logo {
-    margin-top: 7px;
 }
 
 .row {
@@ -45,6 +38,11 @@ body {
     max-width: 8.33333%;
 }
 
+.col-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
@@ -60,23 +58,28 @@ body {
     max-width: 100%;
 }
 
+.logo {
+    margin-top: 7px;
+}
+
 .menu {
     display: flex;
 }
 
 .menu li {
     width: 25%;
+    position: relative;
 }
 
-.menu li:last-child > a {
+.menu li:last-child>a {
     border-right: 1px solid #2c71b8;
 }
 
 .menu a {
-    display: flex;
+    display: block;
     height: 50px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 50px;
     font-size: 21px;
     color: #2c71b8;
     text-decoration: none;
@@ -85,5 +88,115 @@ body {
 
 .menu a:hover {
     background-color: #2c71b8;
+    color: white;
+}
+
+/* <span>&#8744;</span></a> */
+/* span {
+    font-size: 12px;
+    line-height: 21px;
+} */
+
+.angle-down {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(images/blue_angle_down_icon.svg);
+}
+
+.menu a:hover .angle-down {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(images/white_angle_down_icon.svg);
+}
+
+.submenu {
+    position: absolute;
+    display: block;
+}
+
+.submenu li {
+    width: 200%;
+    background-color: #2c71b8;
+}
+
+.submenu a {
+    display: none;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 21px;
     color: #fff;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background: #fff;
+    color: #2c71b8;
+}
+
+.menu li:hover > .submenu a {
+    display: block;
+}
+
+/* other metod search */
+.form-search {
+    border: 1px solid #2c71b8;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-search {
+    background-color: #2c71b8;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    margin-left: 10px;
+    max-width: 200px;
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: #2c71b8;
+}
+
+.card {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-basket {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products-count {
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    background-color: #2c71b8;
+    font-size: 14px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
 }
