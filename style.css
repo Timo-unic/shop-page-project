@@ -7,6 +7,7 @@ body {
     background-image: url("images/patt.png");
 }
 
+/* Базові данні */
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -22,11 +23,11 @@ body {
     align-items: center;
 }
 
+/* Врегулювання накладання мерджинів */
 .row {
     display: flex;
     margin-left: -15px;
     margin-right: -15px;
-    align-items: center;
 }
 
 [class*="col-"] {
@@ -34,6 +35,7 @@ body {
     padding-right: 15px;
 }
 
+/* Розмітка побудування колончастої блокової моделі*/
 .col-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -49,9 +51,24 @@ body {
     max-width: 25%;
 }
 
+.col-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+}
+
+.col-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 
 .col-12 {
@@ -63,6 +80,7 @@ body {
     margin-top: 7px;
 }
 
+/* Меню головне*/
 .menu {
     display: flex;
 }
@@ -92,12 +110,6 @@ body {
     color: white;
 }
 
-/* <span>&#8744;</span></a> */
-/* span {
-    font-size: 12px;
-    line-height: 21px;
-} */
-
 .angle-down {
     width: 15px;
     height: 15px;
@@ -105,13 +117,14 @@ body {
     background-image: url(images/blue_angle_down_icon.svg);
 }
 
-.menu > li:hover .angle-down {
+.menu>li:hover .angle-down {
     width: 15px;
     height: 15px;
     display: inline-block;
     background-image: url(images/white_angle_down_icon.svg);
 }
 
+/* Меню випадаюче*/
 .submenu {
     position: absolute;
     display: block;
@@ -139,21 +152,31 @@ body {
     color: #2c71b8;
 }
 
-.menu li:hover > .submenu a {
+.menu li:hover>.submenu a {
     display: block;
 }
 
-.menu > li:hover > a {
+.menu>li:hover>a {
     background-color: #2c71b8;
     color: #fff;
 }
 
-/* other metod search */
+/* Пошукова форма та товарна корзина */
 .form-search {
     border: 1px solid #2c71b8;
     height: 40px;
     display: flex;
     align-items: center;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    margin-left: 10px;
+    max-width: 148px;
+    outline: none;
+    font-family: inherit;
 }
 
 .btn-search {
@@ -163,15 +186,6 @@ body {
     border: none;
     margin: 5px;
     cursor: pointer;
-}
-
-.searchInput {
-    background-color: transparent;
-    border: none;
-    font-size: 21px;
-    margin-left: 10px;
-    max-width: 200px;
-    outline: none;
 }
 
 .searchInput::placeholder {
@@ -208,4 +222,330 @@ body {
     position: absolute;
     top: -10px;
     left: -10px;
+}
+
+/* Слайдер блок*/
+.slide-container {
+    height: 400px;
+    background-color: #235a93;
+}
+
+.slider {
+    display: flex;
+    height: 400px;
+    color: #fff;
+    font-size: 78px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Головний контент*/
+.nav-line {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.nav-line-underline {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+/* Випадаюче меню сортувальної форми*/
+.sort-Form {
+    position: relative;
+    background-color: #2c71b8;
+    border: 1px solid #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sort-products {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+.sort-products li {
+    background-color: #2c71b8;
+    border: 1px solid #fff;
+}
+
+.sort-Form a,
+.sort-products a {
+    height: 40px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 40px;
+    font-size: 21px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sort-Form>a .angle-down {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-image: url(images/white_angle_down_icon.svg);
+}
+
+.sort-Form:hover .sort-products {
+    display: block;
+}
+
+.sort-products li:hover {
+    background: #fff;
+}
+
+.sort-products li:hover a {
+    color: #2c71b8;
+}
+
+/* Картки з товарами */
+.product {
+    width: 100%;
+    height: 650px;
+    border: 1px solid #fff;
+    margin: 15px 0;
+}
+
+.product-img {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    opacity: 70%;
+    position: relative;
+}
+
+.icon-17 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zoom {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2c71b8;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.zoom-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(images/icon-8.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zoom:hover {
+    background-color: #2c71b8;
+}
+
+.zoom:hover .zoom-icon {
+    background-image: url(images/icon-6.png);
+}
+
+.like {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2c71b8;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.like-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    background-image: url(images/icon-5.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.like:hover {
+    background-color: #2c71b8;
+}
+
+.like:hover .like-icon {
+    background-image: url(images/icon-7.png);
+}
+
+.product-title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 21px;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 25px;
+}
+
+.product-features {
+    font-size: 21px;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.item {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 21px;
+}
+
+.product-price {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    margin: 25px;
+    text-align: center;
+}
+
+sup {
+    font-size: 32px;
+}
+
+.btn-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: calc(100% - 60px);
+    height: 50px;
+    text-transform: uppercase;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.more-details {
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    margin-bottom: 30px;
+}
+
+.icon-basket {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background-image: url(images/basket-white.png);
+}
+
+.more-details:hover {
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+.add-to-cart:hover {
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+/* Селектор вибірковий по товарах та властивостях */
+.select-container {
+    display: block;
+    height: 845px;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 21px;
+    padding-left: 17px;
+    text-transform: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 25px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    left: -25px;
+}
+
+.type,
+.color,
+.volume {
+    padding-top: 33px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.more-options {
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.submit {
+    background: #2c71b8;
+}
+
+.submit:hover {
+    background: none;
+}
+
+/* Завершувальний єлемент */
+footer {
+    height: 100px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.75);
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: #2c71b8;
 }

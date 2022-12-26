@@ -1,62 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop-project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="logo">
-                        <a href="">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <ul class="menu">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products <div class="angle-down"></div></a>
-                         <ul class="submenu">
-                            <li><a href="">Lorem ipsum dolor</a></li>
-                            <li><a href="">Sit amet</a></li>
-                            <li><a href="">Consectetur adipisicing</a></li>
-                            <li><a href="">Tempor incididunt</a></li>
-                            <li><a href="">Dolore magna aliqua</a></li>
-                            <li><a href="">Ut enim minim veniam</a></li>
-                            <li><a href="">Quis nostrud</a></li>
-                         </ul>
-                        </li>
-                        <li><a href="">Shipping</a></li>
-                        <li><a href="">Payment</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <div class="row">
-                        <div class="col-9">
-                            <form action="" class="form-search">
-                                <input class="searchInput" type="text" name="" id="" placeholder="search">
-                                <button class="btn-search"><img src="images/loupe.png" alt=""></button>
-                            </form>
-                        </div>
-                        <div class="col-3">
-                            <div class="card"><img src="images/basket-blue.png" alt="" class="img-basket">
-                                <div class="products-count">0</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <a href="">
+                <img src="images/logo.png" alt="" />
+              </a>
             </div>
+          </div>
+          <div class="col-6">
+            <ul class="menu">
+              <li><a href="">Home</a></li>
+              <li>
+                <a href="">
+                  Products
+                  <div class="angle-down"></div
+                ></a>
+                <ul class="submenu">
+                  <li><a href="">Lorem ipsum dolor</a></li>
+                  <li><a href="">Sit amet</a></li>
+                  <li><a href="">Consectetur adipisicing</a></li>
+                  <li><a href="">Tempor incididunt</a></li>
+                  <li><a href="">Dolore magna aliqua</a></li>
+                  <li><a href="">Ut enim minim veniam</a></li>
+                  <li><a href="">Quis nostrud</a></li>
+                </ul>
+              </li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <div class="row">
+              <div class="col-9">
+                <form action="" class="form-search">
+                  <input
+                    class="searchInput"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="search"
+                  />
+                  <button class="btn-search">
+                    <img src="images/loupe.png" alt="" />
+                  </button>
+                </form>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <img src="images/basket-blue.png" alt="" class="img-basket" />
+                  <div class="products-count">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
-    <main class="main">Main</main>
-    <footer class="footer">Footer</footer>
-</body>
+    <main class="main">
+      <div class="slide-container">
+        <div class="container">
+          <div class="col-12">
+            <div class="slider">S 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <aside class="col-3">
+            <div class="select-container">
+              <div class="item type">Device Type
+                <input type="checkbox" name="laptop" id="laptop">
+                <label for="laptop">Laptop</label>
+                <input type="checkbox" name="tablet" id="tablet">
+                <label for="tablet">Tablet</label>
+              </div>
+              <div class="item color">Color
+                <input type="checkbox" name="Black" id="Black">
+                <label for="Black">Black</label>
+                <input type="checkbox" name="Red" id="Red">
+                <label for="Red">Red</label>
+                <input type="checkbox" name="Green" id="Green">
+                <label for="Green">Green</label>
+                <input type="checkbox" name="Blue" id="Blue">
+                <label for="Blue">Blue</label>
+                <input type="checkbox" name="Orange" id="Orange">
+                <label for="Orange">Orange</label>
+              </div>
+              <div class="item volume">Ram
+                <input type="checkbox" name="1gb" id="1gb">
+                <label for="1gb">1GB</label>
+                <input type="checkbox" name="2gb" id="2gb">
+                <label for="2gb">2GB</label>
+                <input type="checkbox" name="4gb" id="4gb">
+                <label for="4gb">4GB</label>
+                <input type="checkbox" name="6gb" id="6gb">
+                <label for="6gb">6GB</label>
+                <input type="checkbox" name="8gb" id="8gb">
+                <label for="8gb">8GB</label>
+              </div>
+              <p class="more-options">Show more options...</p>
+              <div class="submit-container">
+                <button class="btn submit">Submit</button>
+              </div>
+          </div>
+        </aside>
+          <section class="col-9">
+            <div class="nav-line">
+              Home page > Products > <span class="nav-line-underline">Laptops and Tablets</span>
+            </div>
+            <div class="row">
+              <div class="col-8"><h1>Laptops and Tablets</h1></div>
+              <div class="col-4">
+                <div class="sort-Form">
+                  <a href="">sort by price<div class="angle-down"></div></a>
+                  <ul class="sort-products">
+                    <li><a href="">sort by name</a></li>
+                    <li><a href="">sort by date</a></li>
+                    <li><a href="">sort by popularity</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                    <img src="images/icon-17.png" alt="" class="icon-17">
+                    <div class="zoom"><div class="zoom-icon"></div></div>
+                    <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#1 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$599 <sup>25</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="product">
+                 <div class="product-img">
+                  <img src="images/icon-11.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                </div>
+                <h2 class="product-title">#2 Device Name</h2>
+                <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                <div class="product-price">$1250 <sup>99</sup></div>
+                <form action="" class="btn-conteiner">
+                  <button class="btn more-details">More details</button>
+                  <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                </form>
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                  <img src="images/icon-10.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#3 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$399 <sup>50</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>  
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                    <img src="images/icon-17.png" alt="" class="icon-17">
+                    <div class="zoom"><div class="zoom-icon"></div></div>
+                    <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#1 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$599 <sup>25</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="product">
+                 <div class="product-img">
+                  <img src="images/icon-11.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                </div>
+                <h2 class="product-title">#2 Device Name</h2>
+                <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                <div class="product-price">$1250 <sup>99</sup></div>
+                <form action="" class="btn-conteiner">
+                  <button class="btn more-details">More details</button>
+                  <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                </form>
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                  <img src="images/icon-10.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#3 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$399 <sup>50</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>  
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                    <img src="images/icon-17.png" alt="" class="icon-17">
+                    <div class="zoom"><div class="zoom-icon"></div></div>
+                    <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#1 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$599 <sup>25</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="product">
+                 <div class="product-img">
+                  <img src="images/icon-11.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                </div>
+                <h2 class="product-title">#2 Device Name</h2>
+                <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                <div class="product-price">$1250 <sup>99</sup></div>
+                <form action="" class="btn-conteiner">
+                  <button class="btn more-details">More details</button>
+                  <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                </form>
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="product">
+                  <div class="product-img">
+                  <img src="images/icon-10.png" alt="" class="icon-17">
+                  <div class="zoom"><div class="zoom-icon"></div></div>
+                  <div class="like"><div class="like-icon"></div></div>
+                  </div>
+                  <h2 class="product-title">#3 Device Name</h2>
+                  <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <div class="product-features"><span class="item">Type: </span>Laptop</div>
+                  <div class="product-features"><span class="item">Screen size: </span>7 inches</div>
+                  <div class="product-features"><span class="item">Ram: </span>1 GB</div>
+                  <div class="product-price">$399 <sup>50</sup></div>
+                  <form action="" class="btn-conteiner">
+                    <button class="btn more-details">More details</button>
+                    <button class="btn add-to-cart">Add to cart <div class="icon-basket"></div></button>
+                  </form>
+                </div>
+              </div>  
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">&#169 Copyright 2017</footer>
+  </body>
 </html>
